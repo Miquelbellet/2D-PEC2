@@ -1,0 +1,1555 @@
+fileFormatVersion: 2
+guid: a8fce505df2d98040b059743a9a460ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6871894054375186924
+    second: Mario & Luigi_0
+  - first:
+      213: -15208432361065287
+    second: Mario & Luigi_1
+  - first:
+      213: -236550482234069539
+    second: Mario & Luigi_2
+  - first:
+      213: 88207651646584609
+    second: Mario & Luigi_3
+  - first:
+      213: -2172781951182727817
+    second: Mario & Luigi_4
+  - first:
+      213: -8477107744817796401
+    second: Mario & Luigi_5
+  - first:
+      213: 2231521856852447737
+    second: Mario & Luigi_6
+  - first:
+      213: -7288230858369298284
+    second: Mario & Luigi_7
+  - first:
+      213: -8535516655257053383
+    second: Mario & Luigi_8
+  - first:
+      213: -8712349055419869304
+    second: Mario & Luigi_9
+  - first:
+      213: 8660914674525651018
+    second: Mario & Luigi_10
+  - first:
+      213: 7418216589988415802
+    second: Mario & Luigi_11
+  - first:
+      213: -2070493342671044189
+    second: Mario & Luigi_12
+  - first:
+      213: -1526628121848040103
+    second: Mario & Luigi_13
+  - first:
+      213: -1349502912768094166
+    second: Mario & Luigi_14
+  - first:
+      213: 6058697926248118
+    second: Mario & Luigi_15
+  - first:
+      213: 373846360446919386
+    second: Mario & Luigi_16
+  - first:
+      213: -5071908004195043694
+    second: Mario & Luigi_17
+  - first:
+      213: -7779792766294562155
+    second: Mario & Luigi_18
+  - first:
+      213: 8817177383069216177
+    second: Mario & Luigi_19
+  - first:
+      213: -6364553865629329506
+    second: Mario & Luigi_20
+  - first:
+      213: -5981038481600550347
+    second: Mario & Luigi_21
+  - first:
+      213: -3628297673082003374
+    second: Mario & Luigi_22
+  - first:
+      213: 3527050552370045679
+    second: Mario & Luigi_23
+  - first:
+      213: 7818965364461422394
+    second: Mario & Luigi_24
+  - first:
+      213: 3095909210453957093
+    second: Mario & Luigi_25
+  - first:
+      213: 4350795517672716357
+    second: Mario & Luigi_26
+  - first:
+      213: 1355516542297891076
+    second: Mario & Luigi_27
+  - first:
+      213: 7955220173282903590
+    second: Mario & Luigi_28
+  - first:
+      213: 5572445618435773296
+    second: Mario & Luigi_29
+  - first:
+      213: 2924259913513150003
+    second: Mario & Luigi_30
+  - first:
+      213: 8099192968772253113
+    second: Mario & Luigi_31
+  - first:
+      213: 3350725920430050207
+    second: Mario & Luigi_32
+  - first:
+      213: 2032180537333727523
+    second: Mario & Luigi_33
+  - first:
+      213: -5858534595703116144
+    second: Mario & Luigi_34
+  - first:
+      213: 6463836348291737606
+    second: Mario & Luigi_35
+  - first:
+      213: 5535563829037892838
+    second: Mario & Luigi_36
+  - first:
+      213: -6132922468233902143
+    second: Mario & Luigi_37
+  - first:
+      213: -7003091179539528196
+    second: Mario & Luigi_38
+  - first:
+      213: 2323301982557731318
+    second: Mario & Luigi_39
+  - first:
+      213: -8916424185208522752
+    second: Mario & Luigi_40
+  - first:
+      213: 4128365978611493165
+    second: Mario & Luigi_41
+  - first:
+      213: 2371372629790263952
+    second: Mario & Luigi_42
+  - first:
+      213: 4796064353376306168
+    second: Mario & Luigi_43
+  - first:
+      213: -5924992472373702450
+    second: Mario & Luigi_44
+  - first:
+      213: -5651641033354051855
+    second: Mario & Luigi_45
+  - first:
+      213: 1893577782745614369
+    second: Mario & Luigi_46
+  - first:
+      213: -2704312985707610197
+    second: Mario & Luigi_47
+  - first:
+      213: -4198382015710350063
+    second: Mario & Luigi_48
+  - first:
+      213: 2979170287769436476
+    second: Mario & Luigi_49
+  - first:
+      213: -5298378462743593398
+    second: Mario & Luigi_50
+  - first:
+      213: 6421388848143999583
+    second: Mario & Luigi_51
+  - first:
+      213: 470130206044009710
+    second: Mario & Luigi_52
+  - first:
+      213: -2203604622794635629
+    second: Mario & Luigi_53
+  - first:
+      213: -1286209799883582828
+    second: Mario & Luigi_54
+  - first:
+      213: 297990554836642929
+    second: Mario & Luigi_55
+  - first:
+      213: 5922961511821183697
+    second: Mario & Luigi_56
+  - first:
+      213: -1865626186023169652
+    second: Mario & Luigi_57
+  - first:
+      213: 3400409378711496930
+    second: Mario & Luigi_58
+  - first:
+      213: -4951879275202189980
+    second: Mario & Luigi_59
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mario & Luigi_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68952ce4253f5364ab4c57ecb1ed14e9
+      internalID: -6871894054375186924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bc65fb993fffb4ea482966e5d0d716
+      internalID: -15208432361065287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a0bff4b14dd6d4187aafbb00175382
+      internalID: -236550482234069539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ed6a527bbf3eb44ab673013b3c7a91
+      internalID: 88207651646584609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c25d96a51c2bd4294b4ce10b6084a3
+      internalID: -2172781951182727817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9473f517e1958b419fc8c62984d3080
+      internalID: -8477107744817796401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_6
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5117dde627a63b849bed8e7b95ce357c
+      internalID: 2231521856852447737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_7
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171233bebb7ba6f4caddefe9a6d5c555
+      internalID: -7288230858369298284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf5825ba9579c14b877059e2cd8c58e
+      internalID: -8535516655257053383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_9
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347297756ec6c884b952a7c71372339e
+      internalID: -8712349055419869304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_10
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ca847bfff5c994199931ad925812b9
+      internalID: 8660914674525651018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_11
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55232a9e217837a4492a46fa5d553865
+      internalID: 7418216589988415802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_12
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aea133899ab50e43923be93570c7ea8
+      internalID: -2070493342671044189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_13
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6df74960b3eae45b97523ca994cfea
+      internalID: -1526628121848040103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_14
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9e2186c955e184c9fe36878b88adff
+      internalID: -1349502912768094166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_15
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea0105439ae53f439a47a08c25f11ba
+      internalID: 6058697926248118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_16
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b99c14ddc22aa438355d3aef6a39fe
+      internalID: 373846360446919386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_17
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27e3668dd445f645bc88bb5b982b4c5
+      internalID: -5071908004195043694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_18
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a341a8c173902b4eb18207c0d9ba85b
+      internalID: -7779792766294562155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_19
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7455ddb152b0c074e9c443458f65f3d0
+      internalID: 8817177383069216177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_20
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 654
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8246072c8a3d9844e9289b3717e6e50c
+      internalID: -6364553865629329506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a6b4b2b21930a4f92fbe58178b50cc
+      internalID: -5981038481600550347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_22
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be18b5dee6b1314459482ecc714a71e3
+      internalID: -3628297673082003374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_23
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15abe8ff7574efd4a8d647b9a880b217
+      internalID: 3527050552370045679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_24
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34bedaeb8919124dab9b13fa0606c9a
+      internalID: 7818965364461422394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_25
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e553eb7a5099c514bae095099d503c15
+      internalID: 3095909210453957093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_26
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ad010fd71c74b49ae8d777ca33254b
+      internalID: 4350795517672716357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_27
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e199008b127fb654792b40c38da1954e
+      internalID: 1355516542297891076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_28
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f99b97b9732b2e4cb7aea9a8737f53f
+      internalID: 7955220173282903590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_29
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd8c847744083d44ba4d09179900fa8
+      internalID: 5572445618435773296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_30
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbec6c68f30ac847aab8956065bdcef
+      internalID: 2924259913513150003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_31
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a3eb14a99d75b40b309ff40b991378
+      internalID: 8099192968772253113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_32
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25c54fcff6efe94c810402205d7ce7f
+      internalID: 3350725920430050207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_33
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d1526b94c2f62499ada96b86d812dc
+      internalID: 2032180537333727523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_34
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e378d800d06e145a3f8e1e5102c634
+      internalID: -5858534595703116144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b7091ead1596a4f8eaf0d6a2cde5fc
+      internalID: 6463836348291737606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_36
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89ea2ee778c5d943a239e6dc3c50b1f
+      internalID: 5535563829037892838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_37
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca64029c32e2bc4fb0dac36b356628f
+      internalID: -6132922468233902143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_38
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5da1546f208c441b33fa358a7c18f0
+      internalID: -7003091179539528196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_39
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98031ab53aab134091607a6b47e74ae
+      internalID: 2323301982557731318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_40
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5eaccae772e3b4f86eda328b37d718
+      internalID: -8916424185208522752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_41
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4582139f359308a4ea2ac0025a3fc840
+      internalID: 4128365978611493165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_42
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bf6b3b082c9b347bf634b61adbbfd0
+      internalID: 2371372629790263952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_43
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120139f0cb17f8946830d0162e63ece6
+      internalID: 4796064353376306168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_44
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05377fb4ccd1754478b481cdbb95216d
+      internalID: -5924992472373702450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_45
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e8460f7fa978940a06e5bf6b1f2696
+      internalID: -5651641033354051855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_46
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04e3b34aa13a704ca28102a9dc8d5fe
+      internalID: 1893577782745614369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_47
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd88b72981e9f6b4884b541488267022
+      internalID: -2704312985707610197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_48
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9824234ec2d7a44b0c4d04eb4d7223
+      internalID: -4198382015710350063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_49
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b165dbbeb69d8e4468ce0748d6e02619
+      internalID: 2979170287769436476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_50
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c270c6b899bbd94d81f32097142f28d
+      internalID: -5298378462743593398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_51
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204648432cd6e6641ba836bc63a17510
+      internalID: 6421388848143999583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_52
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922e6f2ef1e736747b123d7d046efd5d
+      internalID: 470130206044009710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_53
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d828b0039d4302b48b7af373ca8bd6d0
+      internalID: -2203604622794635629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_54
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842816e71c01e9e429f74378d34b2f2a
+      internalID: -1286209799883582828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_55
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 526
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd9cdfb15143854ead06ef999d12fac
+      internalID: 297990554836642929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_56
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 400
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc1efd4a504b9941a5054de52540d7c
+      internalID: 5922961511821183697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_57
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 463
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38658df4d872e6549a548f86a22f68c8
+      internalID: -1865626186023169652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_58
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 589
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c2ca8890feefc49bfc865898072b16
+      internalID: 3400409378711496930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario & Luigi_59
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 337
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b8e5b5b9c6bd444a1d850f28da3d2f
+      internalID: -4951879275202189980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
