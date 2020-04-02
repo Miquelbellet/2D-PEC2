@@ -4,9 +4,29 @@ using UnityEngine;
 
 public class PlayerControllerScript : MonoBehaviour
 {
-    public Transform groundCheck1, groundCheck2, jumpCheck1, jumpCheck2;
-    public Transform groundCheck21, groundCheck22, jumpCheck21, jumpCheck22;
-    public float movmentForce, maxSpeed, frictionFloor, jumpForce;
+    [Header("Mario Movement")]
+    public float movmentForce;
+    public float maxSpeed;
+    public float frictionFloor;
+    public float jumpForce;
+
+    [Header("Mario Movement")]
+    public GameObject FireBallPrefab;
+    public GameObject BallContainerR;
+    public GameObject BallContainerL;
+    public float fireBallForce;
+
+    [Header("Mini Mario Checkers")]
+    public Transform groundCheck1;
+    public Transform groundCheck2;
+    public Transform jumpCheck1;
+    public Transform jumpCheck2;
+
+    [Header("Big Mario Checkers")]
+    public Transform groundCheck21;
+    public Transform groundCheck22;
+    public Transform jumpCheck21;
+    public Transform jumpCheck22;
 
     private enum PlayerStates { MiniMario, NormalMario, SuperMario};
     private PlayerStates marioState;
@@ -30,9 +50,14 @@ public class PlayerControllerScript : MonoBehaviour
         }
     }
 
-    private void HorizontalMove()
+    private void Update()
     {
         movement = Input.GetAxis("Horizontal");
+        if (marioState == PlayerStates.SuperMario) Shooting();
+    }
+
+    private void HorizontalMove()
+    {
         if (movement > 0)
         {
             animatorMario.SetBool("running", true);
@@ -53,8 +78,8 @@ public class PlayerControllerScript : MonoBehaviour
             if (rbPlayer.velocity.x < 0.5f && rbPlayer.velocity.x > -0.5f) reduceVelocity = 0;
             else if (rbPlayer.velocity.x > 0.5f) reduceVelocity = rbPlayer.velocity.x - Time.deltaTime * frictionFloor;
             else if (rbPlayer.velocity.x < -0.5f) reduceVelocity = rbPlayer.velocity.x + Time.deltaTime * frictionFloor;
-            rbPlayer.velocity = new Vector2(reduceVelocity, rbPlayer.velocity.y);
             animatorMario.speed = 1f;
+            rbPlayer.velocity = new Vector2(reduceVelocity, rbPlayer.velocity.y);
             animatorMario.SetBool("running", false);
         }
     }
@@ -76,20 +101,39 @@ public class PlayerControllerScript : MonoBehaviour
                 multipleColisionBox = true;
             }
         }
-        
-        if (grounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)))
+
+        if (grounded && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space)))
         {
-            rbPlayer.AddForce(Vector2.up * jumpForce);
             grounded = false;
+            rbPlayer.AddForce(Vector2.up * jumpForce);
         }
         if (!grounded) animatorMario.SetBool("jumping", true);
         else animatorMario.SetBool("jumping", false);
+    }
+    private void Shooting()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            animatorMario.SetBool("shooting", true);
+            if (!GetComponent<SpriteRenderer>().flipX)
+            {
+                var ball = Instantiate(FireBallPrefab, BallContainerR.transform);
+                ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(fireBallForce, 0));
+            }
+            else
+            {
+                var ball = Instantiate(FireBallPrefab, BallContainerL.transform);
+                ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(-fireBallForce, 0));
+            }
+        }
+        else animatorMario.SetBool("shooting", false);
     }
     private void UpgradeMario()
     {
         if (marioState == PlayerStates.MiniMario)
         {
             marioState = PlayerStates.NormalMario;
+            animatorMario.speed = 1f;
             animatorMario.SetTrigger("mario1-mario2");
             rbPlayer.bodyType = RigidbodyType2D.Kinematic;
             rbPlayer.velocity = new Vector2(0, 0);
@@ -98,6 +142,7 @@ public class PlayerControllerScript : MonoBehaviour
         else if (marioState == PlayerStates.NormalMario)
         {
             marioState = PlayerStates.SuperMario;
+            animatorMario.speed = 1f;
             animatorMario.SetTrigger("mario2-mario3");
             rbPlayer.bodyType = RigidbodyType2D.Kinematic;
             rbPlayer.velocity = new Vector2(0, 0);
@@ -149,13 +194,9 @@ public class PlayerControllerScript : MonoBehaviour
     {
         if (multipleColisionBox)
         {
-            multipleColisionBox = false;
-            if (collision.gameObject.tag == "Platform")
+            if (collision.gameObject.tag == "QuestionPlat")
             {
-                if (marioState == PlayerStates.NormalMario || marioState == PlayerStates.SuperMario) Destroy(collision.gameObject, 0.5f);
-            }
-            else if (collision.gameObject.tag == "QuestionPlat")
-            {
+                multipleColisionBox = false;
                 if (marioState == PlayerStates.MiniMario)
                 {
                     if (!grounded && (Physics2D.Linecast(transform.position, jumpCheck1.position, 1 << LayerMask.NameToLayer("Ground")) || Physics2D.Linecast(transform.position, jumpCheck2.position, 1 << LayerMask.NameToLayer("Ground"))))
@@ -174,6 +215,17 @@ public class PlayerControllerScript : MonoBehaviour
                 }
                 
             }
+            else if (collision.gameObject.tag == "Platform")
+            {
+                if (marioState == PlayerStates.NormalMario || marioState == PlayerStates.SuperMario)
+                {
+                    if (!grounded && (Physics2D.Linecast(transform.position, jumpCheck21.position, 1 << LayerMask.NameToLayer("Ground")) || Physics2D.Linecast(transform.position, jumpCheck22.position, 1 << LayerMask.NameToLayer("Ground"))))
+                    {
+                        multipleColisionBox = false;
+                        Destroy(collision.gameObject, 0.5f);
+                    }
+                }
+            }
         }
 
         if (collision.gameObject.tag == "Champi")
@@ -181,7 +233,7 @@ public class PlayerControllerScript : MonoBehaviour
             if (Physics2D.Linecast(transform.position, groundCheck1.position, 1 << LayerMask.NameToLayer("Champi")) || Physics2D.Linecast(transform.position, groundCheck2.position, 1 << LayerMask.NameToLayer("Champi")) 
                 || Physics2D.Linecast(transform.position, groundCheck21.position, 1 << LayerMask.NameToLayer("Champi")) || Physics2D.Linecast(transform.position, groundCheck22.position, 1 << LayerMask.NameToLayer("Champi")))
             {
-                collision.transform.GetComponent<ChampiScript>().Dead();
+                collision.transform.GetComponent<ChampiScript>().DeadAplastament();
                 rbPlayer.AddForce(new Vector2(0, jumpForce));
             }
             else
@@ -189,6 +241,7 @@ public class PlayerControllerScript : MonoBehaviour
                 if (!notHurtable)
                 {
                     notHurtable = true;
+                    collision.transform.GetComponent<ChampiScript>().DeadInverse();
                     ReduceMarioLife();
                 }
             }

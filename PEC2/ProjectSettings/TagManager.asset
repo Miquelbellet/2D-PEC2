@@ -8,10 +8,9 @@ TagManager:
   - Ground
   - QuestionPlat
   - PowerUp
-  - Mario1
-  - Mario2
-  - Mario3
   - Champi
+  - Gold
+  - FireBall
   layers:
   - Default
   - TransparentFX
@@ -23,7 +22,7 @@ TagManager:
   - 
   - Ground
   - Champi
-  - 
+  - Background
   - 
   - 
   - 
