@@ -27,6 +27,7 @@ public class FireBallScript : MonoBehaviour
         animatorFireBall.SetTrigger("destroyFireBall");
         rbFireBall.bodyType = RigidbodyType2D.Kinematic;
         rbFireBall.velocity = new Vector2(0, 0);
+        GetComponent<BoxCollider2D>().enabled = true;
         Destroy(gameObject, 0.5f);
     }
 

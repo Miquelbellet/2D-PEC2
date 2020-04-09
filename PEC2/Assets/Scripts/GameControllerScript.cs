@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameControllerScript : MonoBehaviour
 {
-    public GameObject camera, mario, blackImg;
+    public GameObject mainCamera, mario, blackImg;
     public float waitingToStartTime;
     private float time;
     private void Awake()
@@ -25,6 +25,6 @@ public class GameControllerScript : MonoBehaviour
             blackImg.SetActive(false);
             mario.GetComponent<PlayerControllerScript>().isMarioDead = false;
         }
-        camera.transform.position = new Vector3(mario.transform.position.x, 0, -1);
+        mainCamera.transform.position = new Vector3(mario.transform.position.x, 0, -1);
     }
 }

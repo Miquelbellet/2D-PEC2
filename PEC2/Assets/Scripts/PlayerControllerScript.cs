@@ -7,6 +7,7 @@ public class PlayerControllerScript : MonoBehaviour
 {
     [Header("Scripts")]
     public UIScript uiScript;
+    public SFXScript sfxScript;
 
     [Header("Mario Movement")]
     public float movmentForce;
@@ -113,6 +114,8 @@ public class PlayerControllerScript : MonoBehaviour
         {
             grounded = false;
             rbPlayer.AddForce(Vector2.up * jumpForce);
+            if (marioState == PlayerStates.MiniMario) sfxScript.ClipJump();
+            else sfxScript.ClipSuperJump();
         }
         if (!grounded) animatorMario.SetBool("jumping", true);
         else animatorMario.SetBool("jumping", false);
@@ -122,14 +125,15 @@ public class PlayerControllerScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             animatorMario.SetBool("shooting", true);
+            sfxScript.ClipFireBall();
             if (!GetComponent<SpriteRenderer>().flipX)
             {
-                var ball = Instantiate(FireBallPrefab, BallContainerR.transform);
+                var ball = Instantiate(FireBallPrefab, BallContainerR.transform.position, BallContainerR.transform.rotation);
                 ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(fireBallForce, 0));
             }
             else
             {
-                var ball = Instantiate(FireBallPrefab, BallContainerL.transform);
+                var ball = Instantiate(FireBallPrefab, BallContainerL.transform.position, BallContainerL.transform.rotation);
                 ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(-fireBallForce, 0));
             }
         }
@@ -165,6 +169,7 @@ public class PlayerControllerScript : MonoBehaviour
             GetComponent<BoxCollider2D>().enabled = false;
             rbPlayer.velocity = new Vector2(0, 0);
             rbPlayer.AddForce(new Vector2(0, jumpForce));
+            sfxScript.ClipGameOver();
             Invoke("GameOver", 4f);
         }
         else if (marioState == PlayerStates.NormalMario || marioState == PlayerStates.SuperMario)
@@ -243,7 +248,8 @@ public class PlayerControllerScript : MonoBehaviour
                     if (!grounded && (Physics2D.Linecast(transform.position, jumpCheck1.position, 1 << LayerMask.NameToLayer("Ground")) || Physics2D.Linecast(transform.position, jumpCheck2.position, 1 << LayerMask.NameToLayer("Ground"))))
                     {
                         multipleColisionBox = false;
-                        collision.transform.GetComponent<Animator>().SetTrigger("platformJump");
+                        collision.transform.GetComponent<Animator>().SetBool("platformJump", true);
+                        collision.gameObject.GetComponent<PlatformScript>().ShowPowerUpPlatform();
                     }
                 }
                 if (marioState == PlayerStates.NormalMario || marioState == PlayerStates.SuperMario)
@@ -251,7 +257,8 @@ public class PlayerControllerScript : MonoBehaviour
                     if (!grounded && (Physics2D.Linecast(transform.position, jumpCheck21.position, 1 << LayerMask.NameToLayer("Ground")) || Physics2D.Linecast(transform.position, jumpCheck22.position, 1 << LayerMask.NameToLayer("Ground"))))
                     {
                         multipleColisionBox = false;
-                        Destroy(collision.gameObject, 0.5f);
+                        sfxScript.ClipBlockBrake();
+                        Destroy(collision.gameObject, 0.2f);
                     }
                 }
             }
@@ -281,6 +288,7 @@ public class PlayerControllerScript : MonoBehaviour
     {
         if (collision.tag == "PowerUp")
         {
+            sfxScript.ClipPowerUp();
             uiScript.PlusPoints(1000);
             UpgradeMario();
             Destroy(collision.gameObject);

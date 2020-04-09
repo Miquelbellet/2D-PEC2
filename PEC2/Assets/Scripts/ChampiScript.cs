@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class ChampiScript : MonoBehaviour
 {
-    public float forceMovement, maxVelocity, timeWalking;
+    public float timeWalking;
 
+    private GameObject gameController;
     private Rigidbody2D rbChampi;
     private Animator animChampi;
     private float time;
     private bool isDead = false;
     void Start()
     {
+        gameController = GameObject.FindGameObjectWithTag("GameController");
         rbChampi = GetComponent<Rigidbody2D>();
         animChampi = GetComponent<Animator>();
     }
@@ -23,15 +25,14 @@ public class ChampiScript : MonoBehaviour
 
     private void Movement()
     {
-        var pos = transform.position;
         time += Time.deltaTime;
         if (time < timeWalking)
         {
-            transform.position = new Vector2(pos.x+0.005f, transform.position.y);
+            transform.position = new Vector2(transform.position.x+0.005f, transform.position.y);
         }
         else if (time > timeWalking && time < timeWalking * 2)
         {
-            transform.position = new Vector2(pos.x-0.005f, transform.position.y);
+            transform.position = new Vector2(transform.position.x-0.005f, transform.position.y);
         }
         else time = 0;
     }
@@ -43,7 +44,8 @@ public class ChampiScript : MonoBehaviour
         rbChampi.bodyType = RigidbodyType2D.Kinematic;
         GetComponent<BoxCollider2D>().enabled = false;
         animChampi.SetTrigger("champiDead");
-        Destroy(gameObject, 3f);
+        gameController.GetComponent<SFXScript>().ClipChampiDead();
+        Destroy(gameObject, 1.5f);
     }
     public void DeadInverse()
     {
@@ -52,6 +54,7 @@ public class ChampiScript : MonoBehaviour
         GetComponent<BoxCollider2D>().enabled = false;
         rbChampi.velocity = new Vector2(0, 0);
         rbChampi.AddForce(new Vector2(50f, 150f));
+        gameController.GetComponent<SFXScript>().ClipChampiDeadFire();
         Destroy(gameObject, 3f);
     }
 }
