@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControllerScript : MonoBehaviour
 {
+    [Header("Scripts")]
+    public UIScript uiScript;
+
     [Header("Mario Movement")]
     public float movmentForce;
     public float maxSpeed;
@@ -28,11 +32,13 @@ public class PlayerControllerScript : MonoBehaviour
     public Transform jumpCheck21;
     public Transform jumpCheck22;
 
+    [HideInInspector] public bool isMarioDead = true, finished = false;
+
     private enum PlayerStates { MiniMario, NormalMario, SuperMario};
     private PlayerStates marioState;
     private Rigidbody2D rbPlayer;
     private Animator animatorMario;
-    private bool grounded = true, multipleColisionBox = true, notHurtable = false, isMarioDead = false;
+    private bool grounded = true, multipleColisionBox = true, notHurtable = false, jumpDone = false;
     private float movement, reduceVelocity;
     void Start()
     {
@@ -45,15 +51,16 @@ public class PlayerControllerScript : MonoBehaviour
     {
         if (!isMarioDead)
         {
-            HorizontalMove();
+            if(!finished) HorizontalMove();
             JumpMove();
         }
+        if (finished) AnimationFinish();
     }
 
     private void Update()
     {
         movement = Input.GetAxis("Horizontal");
-        if (marioState == PlayerStates.SuperMario) Shooting();
+        if (marioState == PlayerStates.SuperMario && !finished) Shooting();
     }
 
     private void HorizontalMove()
@@ -102,7 +109,7 @@ public class PlayerControllerScript : MonoBehaviour
             }
         }
 
-        if (grounded && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space)))
+        if (grounded && !finished && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space)))
         {
             grounded = false;
             rbPlayer.AddForce(Vector2.up * jumpForce);
@@ -148,10 +155,6 @@ public class PlayerControllerScript : MonoBehaviour
             rbPlayer.velocity = new Vector2(0, 0);
             Invoke("SetMario3", animatorMario.GetCurrentAnimatorClipInfo(0).Length);
         }
-        else if (marioState == PlayerStates.SuperMario)
-        {
-            Debug.Log("+1000");
-        }
     }
     private void ReduceMarioLife()
     {
@@ -188,7 +191,25 @@ public class PlayerControllerScript : MonoBehaviour
     }
     private void GameOver()
     {
-        Debug.Log("Game Over");
+        SceneManager.LoadScene("MenuScene");
+    }
+    private void JumpFinish()
+    {
+        finished = true;
+        rbPlayer.velocity = new Vector2(0, 0);
+    }
+    private void AnimationFinish()
+    {
+        if (grounded)
+        {
+            rbPlayer.velocity = new Vector2(maxSpeed/3, rbPlayer.velocity.y);
+            animatorMario.SetBool("running", true);
+            Invoke("Finish", 4f);
+        }
+    }
+    private void Finish()
+    {
+        Debug.Log("Finished");
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -217,6 +238,14 @@ public class PlayerControllerScript : MonoBehaviour
             }
             else if (collision.gameObject.tag == "Platform")
             {
+                if (marioState == PlayerStates.MiniMario)
+                {
+                    if (!grounded && (Physics2D.Linecast(transform.position, jumpCheck1.position, 1 << LayerMask.NameToLayer("Ground")) || Physics2D.Linecast(transform.position, jumpCheck2.position, 1 << LayerMask.NameToLayer("Ground"))))
+                    {
+                        multipleColisionBox = false;
+                        collision.transform.GetComponent<Animator>().SetTrigger("platformJump");
+                    }
+                }
                 if (marioState == PlayerStates.NormalMario || marioState == PlayerStates.SuperMario)
                 {
                     if (!grounded && (Physics2D.Linecast(transform.position, jumpCheck21.position, 1 << LayerMask.NameToLayer("Ground")) || Physics2D.Linecast(transform.position, jumpCheck22.position, 1 << LayerMask.NameToLayer("Ground"))))
@@ -235,6 +264,7 @@ public class PlayerControllerScript : MonoBehaviour
             {
                 collision.transform.GetComponent<ChampiScript>().DeadAplastament();
                 rbPlayer.AddForce(new Vector2(0, jumpForce));
+                uiScript.PlusPoints(100);
             }
             else
             {
@@ -251,8 +281,32 @@ public class PlayerControllerScript : MonoBehaviour
     {
         if (collision.tag == "PowerUp")
         {
+            uiScript.PlusPoints(1000);
             UpgradeMario();
             Destroy(collision.gameObject);
+        }
+        else if (collision.tag == "FallDead")
+        {
+            marioState = PlayerStates.MiniMario;
+            ReduceMarioLife();
+        }
+        else if (collision.tag == "ExtraFinish")
+        {
+            if (!jumpDone)
+            {
+                jumpDone = true;
+                uiScript.PlusPoints(5000);
+                JumpFinish();
+            }
+        }
+        else if (collision.tag == "NormalFinish")
+        {
+            if (!jumpDone)
+            {
+                jumpDone = true;
+                uiScript.PlusPoints(500);
+                JumpFinish();
+            }
         }
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlatformScript : MonoBehaviour
 {
+    public UIScript uiScript;
     private bool powerUpShown = false;
     void Start()
     {
@@ -20,13 +21,17 @@ public class PlatformScript : MonoBehaviour
         if (!powerUpShown)
         {
             powerUpShown = true;
-            var rand = Random.Range(0, 3);
-            if(rand == 0 || rand == 1) transform.GetChild(rand).gameObject.SetActive(true);
+            var rand = Random.Range(0, 6);
+            if(rand == 0 || rand == 1)
+            {
+                transform.GetChild(rand).gameObject.SetActive(true);
+            }
             else
             {
                 transform.GetChild(2).gameObject.SetActive(true);
                 transform.GetChild(2).GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 15));
-                Debug.Log("+100");
+                uiScript.PlusGold();
+                uiScript.PlusPoints(200);
             }
         }
     }

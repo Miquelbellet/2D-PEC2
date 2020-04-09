@@ -11,6 +11,9 @@ TagManager:
   - Champi
   - Gold
   - FireBall
+  - FallDead
+  - NormalFinish
+  - ExtraFinish
   layers:
   - Default
   - TransparentFX
