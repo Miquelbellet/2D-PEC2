@@ -14,16 +14,18 @@ public class SFXScript : MonoBehaviour
     public AudioClip coinClip;
     public AudioClip sowingPowerUpClip;
     public AudioClip powerUpClip;
+    public AudioClip marioLoseLife;
     public AudioClip fireBall;
     public AudioClip champiDeadFire;
     public AudioClip champiDead;
     public AudioClip blockBreak;
     public AudioClip finishClip;
     public AudioClip endMusic;
+    public AudioClip finalPoints;
 
     private AudioSource asMusic, asMario;
     private float timer;
-    private bool playFinalClip = false;
+    private bool playFinalClip = false, finalMusicSong = false, songStarted = false;
     void Start()
     {
         asMusic = GetComponent<AudioSource>();
@@ -32,9 +34,15 @@ public class SFXScript : MonoBehaviour
 
     void Update()
     {
+        //Un cop s'acabi el temps d'espera perque es desactivi la pantalla en negre, activar la canço principal de mario.
         timer += Time.deltaTime;
-        if(timer >= GetComponent<GameControllerScript>().waitingToStartTime-1f && timer <= GetComponent<GameControllerScript>().waitingToStartTime) asMusic.Play();
+        if(timer >= GetComponent<GameControllerScript>().waitingToStartTime && !songStarted)
+        {
+            songStarted = true;
+            asMusic.Play();
+        }
 
+        //Un cop acaba el nivell, activar l'efecte de la barra i la canço final del  nivell
         if (mario.GetComponent<PlayerControllerScript>().finished) FinalClip();
     }
 
@@ -64,6 +72,10 @@ public class SFXScript : MonoBehaviour
     {
         asMario.PlayOneShot(powerUpClip);
     }
+    public void ClipLoseLife()
+    {
+        asMario.PlayOneShot(marioLoseLife);
+    }
     public void ClipFireBall()
     {
         asMario.PlayOneShot(fireBall);
@@ -84,14 +96,25 @@ public class SFXScript : MonoBehaviour
     {
         asMario.PlayOneShot(finishClip);
     }
+    public void ClipFinalPoints()
+    {
+        asMario.PlayOneShot(finalPoints);
+    }
     private void FinalClip()
     {
+        //Parar la conço principal, i activar l'efecte de la barra final
         if (!playFinalClip)
         {
             playFinalClip = true;
             asMusic.Stop();
             asMario.PlayOneShot(finishClip);
         }
-        if (!asMario.isPlaying) asMario.PlayOneShot(endMusic);
+
+        //Un cop acabat l'efecte de la barra final, activar la canço final
+        if (!asMario.isPlaying && !asMusic.isPlaying && !finalMusicSong)
+        {
+            finalMusicSong = true;
+            asMusic.PlayOneShot(endMusic);
+        }
     }
 }

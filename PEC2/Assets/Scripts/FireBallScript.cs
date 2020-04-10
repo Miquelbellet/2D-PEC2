@@ -15,6 +15,7 @@ public class FireBallScript : MonoBehaviour
 
     void Update()
     {
+        //Un cop creada la bola de foc, que es destrueixi als 3 segons de ser llençada.
         time += Time.deltaTime;
         if (time >= 3f)
         {
@@ -24,15 +25,18 @@ public class FireBallScript : MonoBehaviour
 
     private void DestroyFireBall()
     {
-        animatorFireBall.SetTrigger("destroyFireBall");
+        //Desactivar el RigidBody i el  collider, posar la velocitat a 0
         rbFireBall.bodyType = RigidbodyType2D.Kinematic;
         rbFireBall.velocity = new Vector2(0, 0);
-        GetComponent<BoxCollider2D>().enabled = true;
+        GetComponent<CircleCollider2D>().enabled = false;
+        //Activar l'animació de destruir bola i destruir l'objecte
+        animatorFireBall.SetTrigger("destroyFireBall");
         Destroy(gameObject, 0.5f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //Si colisiona amb un enemic, que es destrueixi la bola i que mati a l'enemic.
         if(collision.gameObject.tag == "Champi")
         {
             DestroyFireBall();
